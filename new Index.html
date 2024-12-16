@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Speed Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #2d3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            padding: 30px;
+        }
+        .speed-test-card {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .speed-test-card div {
+            text-align: center;
+        }
+        .speed-test-card svg {
+            width: 50px;
+            height: 50px;
+            fill: #2d3e50;
+        }
+        .test-button {
+            display: block;
+            width: 200px;
+            margin: 30px auto;
+            padding: 10px;
+            background-color: #2d3e50;
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .test-button:hover {
+            background-color: #1f2d3a;
+        }
+        footer {
+            background-color: #2d3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://i.ibb.co.com/684hWMf/20241208-112523.png" alt="Website Logo" width="300">
+        <h1>Internet Speed Test</h1>
+    </header>
+
+
+    <div class="container">
+        <div class="speed-test-card">
+            <div>
+                <!-- Download Speed Icon -->
+                <svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-16L12 3 5 10h4v4h6v-4h4L12 4z"/></svg>
+                <h3>Download Speed</h3>
+                <p id="download-speed">0 Mbps</p>
+            </div>
+            <div>
+                <!-- Upload Speed Icon -->
+                <svg viewBox="0 0 24 24"><path d="M19 13h-4v3H9v-3H5l7-7 7 7zm-7 4h7v2H7v-2h7z"/></svg>
+                <h3>Upload Speed</h3>
+                <p id="upload-speed">0 Mbps</p>
+            </div>
+            <div>
+                <!-- Browsing Speed Icon -->
+                <svg viewBox="0 0 24 24"><path d="M21 5V3H3v2H1v14h2v2h18v-2h2V5h-2zm-2 12H5v-2h14v2zm0-4H5v-2h14v2zm0-4H5V7h14v2z"/></svg>
+                <h3>Browsing Speed</h3>
+                <p id="browsing-speed">0 Mbps</p>
+            </div>
+        </div>
+
+
+        <button class="test-button" onclick="runSpeedTest()">Start Speed Test</button>
+    </div>
+
+
+<footer>
+    <p>&copy; 2024 <a href="https://youtube.com/@techand_news?si=tRqhft3xLzNNV966" target="_blank" style="color: blue; text-decoration: none;">Tech & News</a>.</a></p> Designed by <a href="https://wa.me/8801606643107" target="_blank" style="color: blue; text-decoration: none;">Md Milon</a></p>
+</footer>
+    
+    <script>
+        function runSpeedTest() {
+            // This is a simplified version; in a real scenario, you would integrate an actual speed test API here.
+            document.getElementById("download-speed").innerText = "50 Mbps";
+            document.getElementById("upload-speed").innerText = "20 Mbps";
+            document.getElementById("browsing-speed").innerText = "10 Mbps";
+        }
+    </script>
+</body>
+</html>
